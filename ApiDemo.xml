@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiDemo</name>
+    </assembly>
+    <members>
+        <member name="M:ApiDemo.Controllers.HomeController.Get">
+            <summary>
+            test ACTION  method
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
