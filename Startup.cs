@@ -1,5 +1,6 @@
 using ApiDemo.Contracts;
 using ApiDemo.Data;
+using ApiDemo.Mappings;
 using ApiDemo.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -44,6 +45,7 @@ namespace ApiDemo
                     builder => builder.AllowAnyOrigin().AllowAnyMethod()
                     .AllowAnyHeader());
             });
+            services.AddAutoMapper(typeof(Map));
             services.AddSwaggerGen(c =>
             {
             c.SwaggerDoc("v1", new OpenApiInfo { Version = "v1", Title = "Book store" });
